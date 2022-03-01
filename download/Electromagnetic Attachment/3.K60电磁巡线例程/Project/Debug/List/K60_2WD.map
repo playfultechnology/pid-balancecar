@@ -1,0 +1,412 @@
+###############################################################################
+#
+# IAR ELF Linker V8.30.1.114/W32 for ARM                  14/May/2020  09:27:36
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Exe\K60_2WD.out
+#    Map file     =  
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\List\K60_2WD.map
+#    Command line =  
+#        -f C:\Users\Administrator\AppData\Local\Temp\EW15B2.tmp
+#        (H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\ADC.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\ELE.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\LED.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\main.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\MK60_ADC.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\MK60_CMT.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\MK60_DMA.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\MK60_FTM.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\MK60_GPIO.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\MK60_IIC.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\MK60_LPTMR.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\MK60_PIT.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\MK60_PLL.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\MK60_SYSTICK.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\MK60_UART.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\MK60_WDOG.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\OLED.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\show.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\start.o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj\startup_MK60D10.o
+#        --no_out_extension -o
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Exe\K60_2WD.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\List\K60_2WD.map
+#        --config
+#        H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\..\System\linker\PFXflash.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x0 { ro section .intvec };
+"P2":  place in [from 0x0 to 0x3ff] |
+                [from 0x410 to 0x7'ffff] |
+                [from 0x1000'0000 to 0x1007'ffff] { ro };
+define block CSTACK with size = 8K, alignment = 8 { };
+define block HEAP with size = 16K, alignment = 8 { };
+"P3":  place in [from 0x1fff'0000 to 0x2001'0000] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  section .flex_ram    in "P4"
+  section FlashConfig  in "P1"
+
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x410
+  .intvec            ro code          0x0   0x410  startup_MK60D10.o [1]
+                                  - 0x410   0x410
+
+"P2":                                      0x1638
+  .text              ro code        0x410   0xe1c  OLED.o [1]
+  .text              ro code       0x122c    0x74  MK60_GPIO.o [1]
+  .text              ro code       0x12a0    0xc4  MK60_SYSTICK.o [1]
+  .text              ro code       0x1364   0x138  MK60_PLL.o [1]
+  .text              ro code       0x149c    0xe8  MK60_ADC.o [1]
+  .text              ro code       0x1584    0x9c  show.o [1]
+  .text              ro code       0x1620    0x64  ELE.o [1]
+  .text              ro code       0x1684    0x50  main.o [1]
+  .text              ro code       0x16d4    0x1a  LED.o [1]
+  .text              ro code       0x16ee    0x3a  zero_init3.o [3]
+  .text              ro code       0x1728    0x30  MK60_WDOG.o [1]
+  .text              ro code       0x1758    0x2c  copy_init3.o [3]
+  .text              ro code       0x1784    0x28  data_init.o [3]
+  .iar.init_table    const         0x17ac    0x24  - Linker created -
+  .text              ro code       0x17d0    0x1e  cmain.o [3]
+  .text              ro code       0x17ee     0x4  low_level_init.o [2]
+  .text              ro code       0x17f2     0x4  exit.o [2]
+  .text              ro code       0x17f8     0xa  cexit.o [3]
+  .text              ro code       0x1804    0x14  exit.o [4]
+  .text              ro code       0x1818    0x16  start.o [1]
+  .text              ro code       0x1830    0x10  startup_MK60D10.o [1]
+  .text              ro code       0x1840     0xc  cstartup_M.o [3]
+  .text              ro code       0x184c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1850     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1854     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1858     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x185c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1860     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1864     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1868     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x186c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1870     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1874     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1878     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x187c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1880     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1884     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1888     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x188c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1890     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1894     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1898     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x189c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18a0     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18a4     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18a8     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18ac     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18b0     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18b4     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18b8     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18bc     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18c0     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18c4     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18c8     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18cc     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18d0     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18d4     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18d8     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18dc     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18e0     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18e4     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18e8     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18ec     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18f0     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18f4     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18f8     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x18fc     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1900     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1904     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1908     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x190c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1910     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1914     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1918     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x191c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1920     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1924     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1928     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x192c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1930     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1934     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1938     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x193c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1940     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1944     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1948     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x194c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1950     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1954     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1958     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x195c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1960     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1964     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1968     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x196c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1970     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1974     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1978     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x197c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1980     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1984     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1988     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x198c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1990     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1994     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1998     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x199c     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19a0     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19a4     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19a8     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19ac     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19b0     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19b4     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19b8     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19bc     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19c0     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19c4     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19c8     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19cc     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19d0     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19d4     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19d8     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19dc     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19e0     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19e4     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19e8     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19ec     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19f0     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19f4     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19f8     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x19fc     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1a00     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1a04     0x4  startup_MK60D10.o [1]
+  .text              ro code       0x1a08     0x4  startup_MK60D10.o [1]
+  .rodata            const         0x1a0c     0x0  zero_init3.o [3]
+  .rodata            const         0x1a0c     0x0  copy_init3.o [3]
+  Initializer bytes  const         0x1a0c    0x3c  <for P3 s0>
+                                 - 0x1a48  0x1638
+
+"P3", part 1 of 3:                           0x3c
+  P3 s0                       0x1fff'0000    0x3c  <Init block>
+    .data            inited   0x1fff'0000    0x28  MK60_GPIO.o [1]
+    .data            inited   0x1fff'0028    0x14  MK60_SYSTICK.o [1]
+                            - 0x1fff'003c    0x3c
+
+"P3", part 2 of 3:                          0x438
+  .bss               zero     0x1fff'003c   0x400  OLED.o [1]
+  .bss               zero     0x1fff'0440    0x20  MK60_SYSTICK.o [1]
+  .bss               zero     0x1fff'0460     0x4  main.o [1]
+  .bss               zero     0x1fff'0464     0x4  main.o [1]
+  .bss               zero     0x1fff'0468     0x4  main.o [1]
+  .bss               zero     0x1fff'046c     0x4  main.o [1]
+  .bss               zero     0x1fff'0470     0x2  MK60_PLL.o [1]
+                            - 0x1fff'0472   0x436
+
+"P3", part 3 of 3:                         0x2000
+  CSTACK                      0x1fff'0478  0x2000  <Block>
+    CSTACK           uninit   0x1fff'0478  0x2000  <Block tail>
+                            - 0x1fff'2478  0x2000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+       0x1a48     0x7'ffff  0x7'e5b8
+  0x1000'0000  0x1007'ffff  0x8'0000
+  0x1fff'0474  0x1fff'0477       0x4
+  0x1fff'2478  0x2001'0000  0x1'db89
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x436:
+          0x1fff'003c  0x436
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x3c:
+               0x1a0c   0x3c
+    1 destination range, total size 0x3c:
+          0x1fff'0000   0x3c
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module             ro code  ro data  rw data
+    ------             -------  -------  -------
+command line/config:
+    --------------------------------------------
+    Total:
+
+H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj: [1]
+    ELE.o                  100
+    LED.o                   26
+    MK60_ADC.o             232
+    MK60_GPIO.o            116       40       40
+    MK60_PLL.o             312                 2
+    MK60_SYSTICK.o         196       20       52
+    MK60_WDOG.o             48
+    OLED.o               3 612             1 024
+    main.o                  80                16
+    show.o                 156
+    start.o                 22
+    startup_MK60D10.o    1 504
+    --------------------------------------------
+    Total:               6 404       60    1 134
+
+dl7M_tlf.a: [2]
+    exit.o                   4
+    low_level_init.o         4
+    --------------------------------------------
+    Total:                   8
+
+rt7M_tl.a: [3]
+    cexit.o                 10
+    cmain.o                 30
+    copy_init3.o            44
+    cstartup_M.o            12
+    data_init.o             40
+    zero_init3.o            58
+    --------------------------------------------
+    Total:                 194
+
+shb_l.a: [4]
+    exit.o                  20
+    --------------------------------------------
+    Total:                  20
+
+    Gaps                     6                 4
+    Linker created                   36    8 192
+------------------------------------------------
+    Grand Total:         6 632       96    9 330
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base        0x17ac          --   Gb  - Linker created -
+.iar.init_table$$Limit       0x17d0          --   Gb  - Linker created -
+?main                        0x17d1         Code  Gb  cmain.o [3]
+ADC_Ave                      0x1555   0x30  Code  Gb  MK60_ADC.o [1]
+ADC_Init                     0x149d   0x30  Code  Gb  MK60_ADC.o [1]
+ADC_Mid                      0x1511   0x44  Code  Gb  MK60_ADC.o [1]
+ADC_Once                     0x14cd   0x36  Code  Gb  MK60_ADC.o [1]
+CSTACK$$Base            0x1fff'0478          --   Gb  - Linker created -
+CSTACK$$Limit           0x1fff'2478          --   Gb  - Linker created -
+ELE_Init                     0x1621    0x6  Code  Gb  ELE.o [1]
+ELE_Sensor              0x1fff'0460    0x4  Data  Gb  main.o [1]
+GPIOX                   0x1fff'0000   0x14  Data  Gb  MK60_GPIO.o [1]
+GPIO_PinInit                 0x122d   0x6a  Code  Gb  MK60_GPIO.o [1]
+Get_ELE_Bias                 0x1627   0x50  Code  Gb  ELE.o [1]
+LED_Init                     0x16d5   0x1a  Code  Gb  LED.o [1]
+NMI_Handler                  0x182d    0x2  Code  Gb  start.o [1]
+OLED_Clear                    0x5fb   0x22  Code  Gb  OLED.o [1]
+OLED_DrawPoint                0x61d   0x3e  Code  Gb  OLED.o [1]
+OLED_GRAM               0x1fff'003c  0x400  Data  Gb  OLED.o [1]
+OLED_Init                     0x411  0x11a  Code  Gb  OLED.o [1]
+OLED_Refresh_Gram             0x52b   0x7c  Code  Gb  OLED.o [1]
+OLED_ShowChar                 0x65d   0x8a  Code  Gb  OLED.o [1]
+OLED_ShowNumber               0x6e7   0x8e  Code  Gb  OLED.o [1]
+OLED_ShowString               0x789   0x3e  Code  Gb  OLED.o [1]
+OLED_WR_Byte                  0x5a7   0x54  Code  Gb  OLED.o [1]
+PLL_Init                     0x1365  0x138  Code  Gb  MK60_PLL.o [1]
+PORTX                   0x1fff'0014   0x14  Data  Gb  MK60_GPIO.o [1]
+Region$$Table$$Base          0x17ac          --   Gb  - Linker created -
+Region$$Table$$Limit         0x17d0          --   Gb  - Linker created -
+Sensor_Left             0x1fff'0464    0x4  Data  Gb  main.o [1]
+Sensor_Middle           0x1fff'0468    0x4  Data  Gb  main.o [1]
+Sensor_Right            0x1fff'046c    0x4  Data  Gb  main.o [1]
+Start                        0x1819    0xe  Code  Gb  start.o [1]
+SysTick_Handler              0x12dd    0xc  Code  Gb  MK60_SYSTICK.o [1]
+WDOG_Disable                 0x1729   0x14  Code  Gb  MK60_WDOG.o [1]
+WDOG_Unlock                  0x173d   0x14  Code  Gb  MK60_WDOG.o [1]
+__Vectors                       0x0          --   Gb  startup_MK60D10.o [1]
+__Vectors_End                 0x400         Data  Gb  startup_MK60D10.o [1]
+__Vectors_Size {Abs}          0x400          --   Gb  startup_MK60D10.o [1]
+__cmain                      0x17d1         Code  Gb  cmain.o [3]
+__exit                       0x1805   0x14  Code  Gb  exit.o [4]
+__iar_copy_init3             0x1759   0x2c  Code  Gb  copy_init3.o [3]
+__iar_data_init3             0x1785   0x28  Code  Gb  data_init.o [3]
+__iar_program_start          0x1841         Code  Gb  cstartup_M.o [3]
+__iar_zero_init3             0x16ef   0x3a  Code  Gb  zero_init3.o [3]
+__low_level_init             0x17ef    0x4  Code  Gb  low_level_init.o [2]
+__vector_table                  0x0         Data  Gb  startup_MK60D10.o [1]
+_call_main                   0x17dd         Code  Gb  cmain.o [3]
+_exit                        0x17f9         Code  Gb  cexit.o [3]
+_main                        0x17eb         Code  Gb  cmain.o [3]
+bus_clk                 0x1fff'0471    0x1  Data  Gb  MK60_PLL.o [1]
+core_clk                0x1fff'0470    0x1  Data  Gb  MK60_PLL.o [1]
+delay_ms                     0x1341    0xc  Code  Gb  MK60_SYSTICK.o [1]
+delay_us                     0x131b   0x26  Code  Gb  MK60_SYSTICK.o [1]
+exit                         0x17f3    0x4  Code  Gb  exit.o [2]
+get_current_time_ms          0x12e9   0x12  Code  Lc  MK60_SYSTICK.o [1]
+get_current_time_us          0x12fb   0x20  Code  Lc  MK60_SYSTICK.o [1]
+main                         0x1685   0x50  Code  Gb  main.o [1]
+oled_asc2_1206                0x7c8  0x474  Data  Gb  OLED.o [1]
+oled_asc2_1608                0xc3c  0x5f0  Data  Gb  OLED.o [1]
+oled_show                    0x1585   0x7a  Code  Gb  show.o [1]
+systime                 0x1fff'0028   0x14  Data  Gb  MK60_SYSTICK.o [1]
+systime_init                 0x12a1   0x3c  Code  Lc  MK60_SYSTICK.o [1]
+timer                   0x1fff'0440   0x20  Data  Gb  MK60_SYSTICK.o [1]
+
+
+[1] = H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Obj
+[2] = dl7M_tlf.a
+[3] = rt7M_tl.a
+[4] = shb_l.a
+
+  6 632 bytes of readonly  code memory
+     96 bytes of readonly  data memory
+  9 330 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

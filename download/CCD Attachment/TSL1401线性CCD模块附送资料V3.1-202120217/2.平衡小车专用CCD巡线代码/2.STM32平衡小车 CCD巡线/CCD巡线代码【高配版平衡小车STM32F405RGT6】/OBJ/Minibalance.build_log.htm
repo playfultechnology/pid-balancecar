@@ -1,0 +1,542 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\1.Work\线性CCD\线性CCD模块附送资料\CCD巡线代码STM32F4版\USER\Minibalance.uvproj
+Project File Date:  06/02/2017
+
+<h2>Output:</h2>
+Build target 'MinibalanceF4'
+linking...
+Program Size: Code=49470 RO-data=6690 RW-data=452 ZI-data=3228  
+FromELF: creating hex file...
+"..\OBJ\Minibalance.axf" - 0 Error(s), 0 Warning(s).
+</pre>
+</body>
+</html>
+ad "..\\OBJ\\Minibalance.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+compiling filter.c...
+"..\MiniBalance\filter\filter.c" - 0 Error(s), 0 Warning(s).
+),
+..\MiniBalance\show\show.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=51942 RO-data=6690 RW-data=452 ZI-data=3228  
+FromELF: creating hex file...
+"..\OBJ\Minibalance.axf" - 0 Error(s), 2 Warning(s).
+Load "..\\OBJ\\Minibalance.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+ero
+                if( CCD_Zhongzhi<0)             OLED_ShowString(10,20,"-"),
+..\MiniBalance\show\show.c(38): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if( CCD_Yuzhi<0)                OLED_ShowString(80,20,"-"),
+..\MiniBalance\show\show.c(136): warning:  #1-D: last line of file ends without a newline
+  }
+..\MiniBalance\show\show.c: 3 warnings, 0 errors
+compiling MPU6050.c...
+compiling inv_mpu.c...
+compiling inv_mpu_dmp_motion_driver.c...
+linking...
+Program Size: Code=51942 RO-data=6690 RW-data=452 ZI-data=3228  
+FromELF: creating hex file...
+"..\OBJ\Minibalance.axf" - 0 Error(s), 4 Warning(s).
+r referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\SYSTEM\delay\delay.c: 5 warnings, 1 error
+compiling sys.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\SYSTEM\sys\sys.c: 5 warnings, 1 error
+compiling usart.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\SYSTEM\usart\usart.c(29): error:  #20: identifier "Flag_Show" is undefined
+        if(Flag_Show==0)
+..\SYSTEM\usart\usart.c: 5 warnings, 2 errors
+compiling adc.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance_HARDWARE\ADC\adc.c(43): error:  #20: identifier "ADV" is undefined
+      ADV[tslp]=(Get_Adc(4))>>4;
+..\MiniBalance_HARDWARE\ADC\adc.c: 5 warnings, 2 errors
+compiling encoder.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance_HARDWARE\ENCODER\encoder.c: 5 warnings, 1 error
+compiling exti.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance_HARDWARE\EXTI\exti.c: 5 warnings, 1 error
+compiling key.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance_HARDWARE\KEY\key.c: 5 warnings, 1 error
+compiling LED.C...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance_HARDWARE\LED\LED.C: 5 warnings, 1 error
+compiling motor.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance_HARDWARE\MOTOR\motor.c: 5 warnings, 1 error
+compiling oled.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance_HARDWARE\OLED\oled.c: 5 warnings, 1 error
+compiling IOI2C.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance_HARDWARE\IIC\IOI2C.c: 5 warnings, 1 error
+compiling usartx.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance_HARDWARE\USARTX\usartx.c(70): error:  #20: identifier "Flag_sudu" is undefined
+                if(uart_receive==0x59)  Flag_sudu=2;  //低速挡（默认值）
+..\MiniBalance_HARDWARE\USARTX\usartx.c(72): error:  #20: identifier "Flag_Hover" is undefined
+          if(uart_receive==0x62)Flag_Hover=!Flag_Hover;  
+..\MiniBalance_HARDWARE\USARTX\usartx.c(74): error:  #20: identifier "Bi_zhang" is undefined
+                 if(Bi_zhang!=0)
+..\MiniBalance_HARDWARE\USARTX\usartx.c(81): error:  #20: identifier "Remoter_Ch1" is undefined
+                        Remoter_Ch1=0,Remoter_Ch2=0; //APP接收到信号之后 屏蔽航模遥控
+..\MiniBalance_HARDWARE\USARTX\usartx.c(81): error:  #20: identifier "Remoter_Ch2" is undefined
+                        Remoter_Ch1=0,Remoter_Ch2=0; //APP接收到信号之后 屏蔽航模遥控
+..\MiniBalance_HARDWARE\USARTX\usartx.c(82): error:  #20: identifier "Flag_Qian" is undefined
+                        if(uart_receive==0x5A)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(82): error:  #20: identifier "Flag_Hou" is undefined
+                        if(uart_receive==0x5A)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(82): error:  #20: identifier "Flag_Left" is undefined
+                        if(uart_receive==0x5A)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(82): error:  #20: identifier "Flag_Right" is undefined
+                        if(uart_receive==0x5A)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(93): error:  #20: identifier "Remoter_Ch1" is undefined
+        Remoter_Ch1=0,Remoter_Ch2=0; //APP接收到信号之后 屏蔽航模遥控                   
+..\MiniBalance_HARDWARE\USARTX\usartx.c(93): error:  #20: identifier "Remoter_Ch2" is undefined
+        Remoter_Ch1=0,Remoter_Ch2=0; //APP接收到信号之后 屏蔽航模遥控                   
+..\MiniBalance_HARDWARE\USARTX\usartx.c(94): error:  #20: identifier "Flag_Qian" is undefined
+                        if(uart_receive==0x00)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(94): error:  #20: identifier "Flag_Hou" is undefined
+                        if(uart_receive==0x00)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(94): error:  #20: identifier "Flag_Left" is undefined
+                        if(uart_receive==0x00)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(94): error:  #20: identifier "Flag_Right" is undefined
+                        if(uart_receive==0x00)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(113): error:  #20: identifier "Show_Data_Mb" is undefined
+                             Show_Data_Mb=i;
+..\MiniBalance_HARDWARE\USARTX\usartx.c(114): error:  #20: identifier "PID_Send" is undefined
+                             if(Receive[3]==0x50)              PID_Send=1;     //获取设备参数
+..\MiniBalance_HARDWARE\USARTX\usartx.c(115): error:  #20: identifier "Flash_Send" is undefined
+                                         else  if(Receive[3]==0x57)      Flash_Send=1;   //掉电保存参数
+..\MiniBalance_HARDWARE\USARTX\usartx.c(124): error:  #20: identifier "Balance_Kp" is undefined
+                                                         case 0x30:  Balance_Kp=Data/100;break;
+..\MiniBalance_HARDWARE\USARTX\usartx.c(125): error:  #20: identifier "Balance_Kd" is undefined
+                                                         case 0x31:  Balance_Kd=Data/100;break;
+..\MiniBalance_HARDWARE\USARTX\usartx.c(126): error:  #20: identifier "Velocity_Kp" is undefined
+                                                         case 0x32:  Velocity_Kp=Data/100;break;
+..\MiniBalance_HARDWARE\USARTX\usartx.c(127): error:  #20: identifier "Velocity_Ki" is undefined
+                                                         case 0x33:  Velocity_Ki=Data/100;break;
+..\MiniBalance_HARDWARE\USARTX\usartx.c: 5 warnings, 23 errors
+compiling stmflash.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(96): error:  #20: identifier "PID_Parameter" is undefined
+        STMFLASH_Read(FLASH_SAVE_ADDR,(u32*)PID_Parameter,10);
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(99): error:  #20: identifier "Balance_Kp" is undefined
+        Balance_Kp=300;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(100): error:  #20: identifier "Balance_Kd" is undefined
+        Balance_Kd=1;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(101): error:  #20: identifier "Velocity_Kp" is undefined
+        Velocity_Kp=80;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(102): error:  #20: identifier "Velocity_Ki" is undefined
+        Velocity_Ki=0.4;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(106): error:  #20: identifier "Balance_Kp" is undefined
+        Balance_Kp=(float)PID_Parameter[0]/100;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(107): error:  #20: identifier "Balance_Kd" is undefined
+        Balance_Kd=(float)PID_Parameter[1]/100;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(108): error:  #20: identifier "Velocity_Kp" is undefined
+        Velocity_Kp=(float)PID_Parameter[2]/100;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(109): error:  #20: identifier "Velocity_Ki" is undefined
+        Velocity_Ki=(float)PID_Parameter[3]/100;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(115): error:  #20: identifier "Flash_Parameter" is undefined
+  Flash_Parameter[0]=Balance_Kp*100;            
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(115): error:  #20: identifier "Balance_Kp" is undefined
+  Flash_Parameter[0]=Balance_Kp*100;            
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(116): error:  #20: identifier "Balance_Kd" is undefined
+  Flash_Parameter[1]=Balance_Kd*100;    
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(117): error:  #20: identifier "Velocity_Kp" is undefined
+  Flash_Parameter[2]=Velocity_Kp*100;   
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(118): error:  #20: identifier "Velocity_Ki" is undefined
+  Flash_Parameter[3]=Velocity_Ki*100;   
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c: 5 warnings, 15 errors
+compiling spi.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance_HARDWARE\SPI\spi.c: 5 warnings, 1 error
+compiling 24l01.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance_HARDWARE\NRF24L01\24l01.c: 5 warnings, 1 error
+compiling timer.c...
+..\MiniBalance_HARDWARE\TIMER\timer.c(2): error:  #130: expected a "{"
+  void TIM3_Int_Init(u16 arr,u16 psc)
+..\MiniBalance_HARDWARE\TIMER\timer.c(25): warning:  #1-D: last line of file ends without a newline
+  }
+..\MiniBalance_HARDWARE\TIMER\timer.c: 1 warning, 1 error
+compiling can.c...
+..\SYSTEM\sys\sys.h(25): error:  #130: expected a "{"
+  extern u8 Way_Angle;                                      //获取角度的算法，1：四元数  2：卡尔曼  3：互补滤波
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance_HARDWARE\CAN\can.c(209): error:  #20: identifier "Remoter_Ch1" is undefined
+        Remoter_Ch1=0,Remoter_Ch2=0; //接收到信号之后 屏蔽航模遥控
+..\MiniBalance_HARDWARE\CAN\can.c(209): error:  #20: identifier "Remoter_Ch2" is undefined
+        Remoter_Ch1=0,Remoter_Ch2=0; //接收到信号之后 屏蔽航模遥控
+..\MiniBalance_HARDWARE\CAN\can.c(210): error:  #20: identifier "Flag_Qian" is undefined
+        if(Can_Receive==0x5A)   Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\CAN\can.c(210): error:  #20: identifier "Flag_Hou" is undefined
+        if(Can_Receive==0x5A)   Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\CAN\can.c(210): error:  #20: identifier "Flag_Left" is undefined
+        if(Can_Receive==0x5A)   Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\CAN\can.c(210): error:  #20: identifier "Flag_Right" is undefined
+        if(Can_Receive==0x5A)   Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\CAN\can.c(220): error:  #20: identifier "Flag_sudu" is undefined
+        if(Can_Receive==0x59)  Flag_sudu=2;  //低速挡（默认值）
+..\MiniBalance_HARDWARE\CAN\can.c: 5 warnings, 8 errors
+compiling control.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance\CONTROL\control.c(24): error:  #20: identifier "delay_flag" is undefined
+                  if(delay_flag==1)
+..\MiniBalance\CONTROL\control.c(26): error:  #20: identifier "delay_50" is undefined
+                                 if(++delay_50==1)       delay_50=0,delay_flag=0;                     //给主函数提供50ms的精准延时
+..\MiniBalance\CONTROL\control.c(31): error:  #20: identifier "Voltage" is undefined
+                   Voltage=Get_battery_volt();                                     //===获取电池电压/                                             
+..\MiniBalance\CONTROL\control.c(35): error:  #20: identifier "Encoder_Left" is undefined
+                        Encoder_Left=Read_Encoder(2);                                        //===读取编码器的值，因为两个电机的旋转了180度的，所以对其中一个取反，保证输出极性一致
+..\MiniBalance\CONTROL\control.c(36): error:  #20: identifier "Encoder_Right" is undefined
+                        Encoder_Right=Read_Encoder(4);                                        //===读取编码器的值
+..\MiniBalance\CONTROL\control.c(37): error:  #20: identifier "Way_Angle" is undefined
+                Get_Angle(Way_Angle);                                                 //===更新姿态     
+..\MiniBalance\CONTROL\control.c(41): error:  #20: identifier "Angle_Balance" is undefined
+                        Balance_Pwm =balance(Angle_Balance,Gyro_Balance);                     //===平衡PID控制  
+..\MiniBalance\CONTROL\control.c(41): error:  #20: identifier "Gyro_Balance" is undefined
+                        Balance_Pwm =balance(Angle_Balance,Gyro_Balance);                     //===平衡PID控制  
+..\MiniBalance\CONTROL\control.c(43): error:  #20: identifier "CCD_Zhongzhi" is undefined
+            Turn_Pwm    =turn(CCD_Zhongzhi,Gyro_Turn);                            //===转向环PID控制     
+..\MiniBalance\CONTROL\control.c(43): error:  #20: identifier "Gyro_Turn" is undefined
+            Turn_Pwm    =turn(CCD_Zhongzhi,Gyro_Turn);                            //===转向环PID控制     
+..\MiniBalance\CONTROL\control.c(44): error:  #20: identifier "Moto1" is undefined
+                  Moto1=Balance_Pwm+Velocity_Pwm-Turn_Pwm;                              //===计算左轮电机最终PWM
+..\MiniBalance\CONTROL\control.c(45): error:  #20: identifier "Moto2" is undefined
+                Moto2=Balance_Pwm+Velocity_Pwm+Turn_Pwm;                            //===计算右轮电机最终PWM
+..\MiniBalance\CONTROL\control.c(47): error:  #20: identifier "Voltage" is undefined
+        if(Turn_Off(Angle_Balance,Voltage)==0)                              //===如果不存在异常
+..\MiniBalance\CONTROL\control.c(62): error:  #20: identifier "Zhongzhi" is undefined
+         Bias=Angle-Zhongzhi;                       //===求出平衡的角度中值 和机械相关
+..\MiniBalance\CONTROL\control.c(63): error:  #20: identifier "Balance_Kp" is undefined
+         balance=Balance_Kp*Bias+Gyro*Balance_Kd;   //===计算平衡控制的电机PWM  PD控制   kp是P系数 kd是D系数 
+..\MiniBalance\CONTROL\control.c(63): error:  #20: identifier "Balance_Kd" is undefined
+         balance=Balance_Kp*Bias+Gyro*Balance_Kd;   //===计算平衡控制的电机PWM  PD控制   kp是P系数 kd是D系数 
+..\MiniBalance\CONTROL\control.c(80): error:  #20: identifier "Encoder_Left" is undefined
+                Encoder_Least =(Encoder_Left+Encoder_Right)-0;                    //===获取最新速度偏差==测量速度（左右编码器之和）-目标速度（此处为零） 
+..\MiniBalance\CONTROL\control.c(80): error:  #20: identifier "Encoder_Right" is undefined
+                Encoder_Least =(Encoder_Left+Encoder_Right)-0;                    //===获取最新速度偏差==测量速度（左右编码器之和）-目标速度（此处为零） 
+..\MiniBalance\CONTROL\control.c(88): error:  #20: identifier "Angle_Balance" is undefined
+                if(Turn_Off(Angle_Balance,Voltage)==1||Flag_Stop==1)   Encoder_Integral=0;      //===电机关闭后清除积分
+..\MiniBalance\CONTROL\control.c(88): error:  #20: identifier "Voltage" is undefined
+                if(Turn_Off(Angle_Balance,Voltage)==1||Flag_Stop==1)   Encoder_Integral=0;      //===电机关闭后清除积分
+..\MiniBalance\CONTROL\control.c(88): error:  #20: identifier "Flag_Stop" is undefined
+                if(Turn_Off(Angle_Balance,Voltage)==1||Flag_Stop==1)   Encoder_Integral=0;      //===电机关闭后清除积分
+..\MiniBalance\CONTROL\control.c(131): error:  #20: identifier "Moto1" is undefined
+      if(Moto1<-Amplitude) Moto1=-Amplitude;    
+..\MiniBalance\CONTROL\control.c(133): error:  #20: identifier "Moto2" is undefined
+          if(Moto2<-Amplitude) Moto2=-Amplitude;        
+..\MiniBalance\CONTROL\control.c(146): error:  #20: identifier "Flag_Stop" is undefined
+        if(tmp==1)Flag_Stop=!Flag_Stop;//单击控制小车的启停
+..\MiniBalance\CONTROL\control.c(147): error:  #20: identifier "Flag_Show" is undefined
+        if(tmp==2)Flag_Show=!Flag_Show;//双击控制小车的显示状态
+..\MiniBalance\CONTROL\control.c(149): error:  #20: identifier "Bi_zhang" is undefined
+    if(tmp2==1) Bi_zhang=!Bi_zhang;             //长按控制小车是否进入超声波模式 
+..\MiniBalance\CONTROL\control.c(160): error:  #20: identifier "Zhongzhi" is undefined
+                        if(angle<(-40+Zhongzhi)||angle>(40+Zhongzhi)||1==Flag_Stop||voltage<1110)//电池电压低于11.1V关闭电机
+..\MiniBalance\CONTROL\control.c(160): error:  #20: identifier "Flag_Stop" is undefined
+                        if(angle<(-40+Zhongzhi)||angle>(40+Zhongzhi)||1==Flag_Stop||voltage<1110)//电池电压低于11.1V关闭电机
+..\MiniBalance\CONTROL\control.c(181): error:  #20: identifier "Temperature" is undefined
+                Temperature=Read_Temperature();      //===读取MPU6050内置温度传感器数据，近似表示主板温度。
+..\MiniBalance\CONTROL\control.c: 5 warnings, 30 errors
+compiling show.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance\show\show.c(25): error:  #20: identifier "Temperature" is undefined
+                                                                                                        OLED_ShowNumber(0,10,Temperature/10,2,12);
+..\MiniBalance\show\show.c(29): error:  #20: identifier "Distance" is undefined
+                                                                                                        OLED_ShowNumber(70,10,(u16)Distance,5,12);
+..\MiniBalance\show\show.c(33): error:  #20: identifier "CCD_Zhongzhi" is undefined
+                if( CCD_Zhongzhi<0)             OLED_ShowString(10,20,"-"),
+..\MiniBalance\show\show.c(38): error:  #20: identifier "CCD_Yuzhi" is undefined
+                if( CCD_Yuzhi<0)                OLED_ShowString(80,20,"-"),
+..\MiniBalance\show\show.c(44): error:  #20: identifier "Encoder_Left" is undefined
+                if(Encoder_Left<0)              OLED_ShowString(10,30,"-"),
+..\MiniBalance\show\show.c(49): error:  #20: identifier "Encoder_Right" is undefined
+                if(Encoder_Right<0)             OLED_ShowString(80,30,"-"),
+..\MiniBalance\show\show.c(57): error:  #20: identifier "Voltage" is undefined
+                                      OLED_ShowNumber(45,40,Voltage/100,2,12);
+..\MiniBalance\show\show.c(62): error:  #20: identifier "Angle_Balance" is undefined
+                if(Angle_Balance<0)             OLED_ShowNumber(45,50,Angle_Balance+360,3,12);
+..\MiniBalance\show\show.c(77): error:  #20: identifier "Voltage" is undefined
+                app_4=(Voltage-1110)*2/3;               if(app_4<0)app_4=0;if(app_4>100)app_4=100;   //对电压数据进行处理
+..\MiniBalance\show\show.c(78): error:  #20: identifier "Encoder_Right" is undefined
+                app_3=Encoder_Right*1.1; if(app_3<0)app_3=-app_3;                                          //对编码器数据就行数据处理便于图形化
+..\MiniBalance\show\show.c(79): error:  #20: identifier "Encoder_Left" is undefined
+                app_2=Encoder_Left*1.1;  if(app_2<0)app_2=-app_2;
+..\MiniBalance\show\show.c(81): error:  #20: identifier "PID_Send" is undefined
+        if(PID_Send==1)//发送PID参数
+..\MiniBalance\show\show.c(83): error:  #20: identifier "Balance_Kp" is undefined
+                printf("{C%d:%d:%d:%d:%d:%d:%d:%d:%d}$",(int)(Balance_Kp*100),(int)(Balance_Kd*100),(int)(Velocity_Kp*100),(int)(Velocity_Ki*100),0,0,0,0,0);//打印到APP上面    
+..\MiniBalance\show\show.c(83): error:  #20: identifier "Balance_Kd" is undefined
+                printf("{C%d:%d:%d:%d:%d:%d:%d:%d:%d}$",(int)(Balance_Kp*100),(int)(Balance_Kd*100),(int)(Velocity_Kp*100),(int)(Velocity_Ki*100),0,0,0,0,0);//打印到APP上面    
+..\MiniBalance\show\show.c(83): error:  #20: identifier "Velocity_Kp" is undefined
+                printf("{C%d:%d:%d:%d:%d:%d:%d:%d:%d}$",(int)(Balance_Kp*100),(int)(Balance_Kd*100),(int)(Velocity_Kp*100),(int)(Velocity_Ki*100),0,0,0,0,0);//打印到APP上面    
+..\MiniBalance\show\show.c(83): error:  #20: identifier "Velocity_Ki" is undefined
+                printf("{C%d:%d:%d:%d:%d:%d:%d:%d:%d}$",(int)(Balance_Kp*100),(int)(Balance_Kd*100),(int)(Velocity_Kp*100),(int)(Velocity_Ki*100),0,0,0,0,0);//打印到APP上面    
+..\MiniBalance\show\show.c(87): error:  #20: identifier "Angle_Balance" is undefined
+     printf("{A%d:%d:%d:%d}$",(u8)app_2,(u8)app_3,app_4,(int)Angle_Balance); //打印到APP上面
+..\MiniBalance\show\show.c(89): error:  #20: identifier "Distance" is undefined
+         printf("{B%d:%d:%d:%d}$",(int)Angle_Balance,Distance,Encoder_Left,Encoder_Right);//打印到APP上面 显示波形
+..\MiniBalance\show\show.c(99): error:  #20: identifier "Voltage" is undefined
+      Vol=(float)Voltage/100;
+..\MiniBalance\show\show.c(100): error:  #20: identifier "Angle_Balance" is undefined
+                DataScope_Get_Channel_Data( Angle_Balance, 1 );       //显示角度 单位：度（°）
+..\MiniBalance\show\show.c(101): error:  #20: identifier "Distance" is undefined
+                DataScope_Get_Channel_Data( Distance/10, 2 );         //显示超声波测量的距离 单位：CM 
+..\MiniBalance\show\show.c(133): error:  #20: identifier "ADV" is undefined
+                if(ADV[i]<CCD_Yuzhi) t=1; else t=0;
+..\MiniBalance\show\show.c(133): error:  #20: identifier "CCD_Yuzhi" is undefined
+                if(ADV[i]<CCD_Yuzhi) t=1; else t=0;
+..\MiniBalance\show\show.c(136): warning:  #1-D: last line of file ends without a newline
+  }
+..\MiniBalance\show\show.c: 6 warnings, 24 errors
+compiling MPU6050.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance\MPU6050\MPU6050.c(266): error:  #20: identifier "Flag_Show" is undefined
+         Flag_Show=1;
+..\MiniBalance\MPU6050\MPU6050.c: 5 warnings, 2 errors
+compiling inv_mpu.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance\DMP\inv_mpu.c: 5 warnings, 1 error
+compiling inv_mpu_dmp_motion_driver.c...
+..\MiniBalance_HARDWARE\CAN\can.h(8): error:  #130: expected a "{"
+  u8 CAN1_Mode_Init(u8 tsjw,u8 tbs2,u8 tbs1,u16 brp,u8 mode);//CAN初始化
+..\MiniBalance\DMP\inv_mpu.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  struct int_param_s {
+..\MiniBalance\DMP\inv_mpu.h(28): warning:  #177-D: variable "cb" was declared but never referenced
+      void (*cb)(void);
+..\MiniBalance\DMP\inv_mpu.h(29): warning:  #177-D: variable "pin" was declared but never referenced
+      unsigned short pin;
+..\MiniBalance\DMP\inv_mpu.h(30): warning:  #177-D: variable "lp_exit" was declared but never referenced
+      unsigned char lp_exit;
+..\MiniBalance\DMP\inv_mpu.h(31): warning:  #177-D: variable "active_low" was declared but never referenced
+      unsigned char active_low;
+..\MiniBalance\DMP\inv_mpu_dmp_motion_driver.c: 5 warnings, 1 error
+"..\OBJ\Minibalance.axf" - 121 Error(s), 112 Warning(s).
+Target not created

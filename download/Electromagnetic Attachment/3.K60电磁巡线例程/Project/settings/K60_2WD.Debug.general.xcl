@@ -1,0 +1,17 @@
+"D:\works\program\IAR8.3\arm\bin\armproc.dll" 
+
+"D:\works\program\IAR8.3\arm\bin\armjlink2.dll" 
+
+"H:\迅雷下载\共享资料\【a新整理资料】\【平衡小车之家】电磁巡线传感器附送资料\3.K60电磁巡线例程\Project\Debug\Exe\K60_2WD.out" 
+
+--plugin="D:\works\program\IAR8.3\arm\bin\armbat.dll" 
+
+--device_macro="D:\works\program\IAR8.3\arm\config\debugger\NXP\Kxx.dmac" 
+
+--device_macro="D:\works\program\IAR8.3\arm\config\debugger\NXP\Kxx_Trace.dmac" 
+
+--flash_loader="D:\works\program\IAR8.3\arm\config\flashloader\NXP\FlashK60Dxxx128K.board" 
+
+
+
+

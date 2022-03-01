@@ -1,0 +1,124 @@
+Upload to www.veed.io
+Create Auto-Subtitles in Chinese language.
+
+
+下面我们讲解下如何设置小车从会看
+到小车游行模电实践行光电特别是一
+个白色充电接口在测试服务器使用然
+后但是我们相处也是这样个层面浇头
+是个黄片不能和这边的排阵进行接触
+或者可能会引起网路然后这边是一个
+梯形教果然后主要是用于辨识小车的
+宫殿的慢慢的这个主板上的屁股上面
+这一定要慢慢长然后长期之后我们会
+看到这边有个组开关拨到这个时候主
+板上的灯会点亮但是这个数还不能保
+持我们可以通过两种方式开启屏幕比
+如我们可以单击一个按键的时候就可
+以再次单的英文件就可以关闭在用户
+看见旁边这个是复位按键然后我们可
+以按住小车前推一定要用测试推子的
+然后稍微快一点点这个时候下他就可
+以自动保存当我们在小车保持平和的
+情况下它录小车快速的向上提起弹是
+小车感应到一个较大的加速度之后然
+后就会自动关闭电子然后小车上面一
+个个模块就是控制器这是网页模块就
+是蓝牙模块然后这是驱动器然后再是
+一个电视电量测量模块这边是一个焊
+接口这边是无线模块接口这边可以作
+为一个难忘的一个结果这边有一些扩
+展的解法然后上面我们测试驾车通过
+我们把它上面的时候记住不要带电操
+作锻炼时候查了这边有个视频的弹幕
+上面上的时候我们就开始开始之后在
+显示屏的第二行有显示有显示一些距
+离但是他不能进入壁上我们需要先开
+启平衡开启平安之后我们常用户按键
+两秒钟我们最右上方显示的他当它吊
+臂上会显示的干的拼音对会代表界杯
+上模式前方有障碍物的时候前方两百
+米前前方零点五米内有三个手就会往
+后退如果要切换到该水模式就是前前
+方有障碍物时候小车会跟随着大陆的
+话我们也可以我们需要使用adb连接添
+加之后我们这边找个蓝牙然后连接的
+然后这边调试界面这边有个超声波攻
+切换我们点击一下这时候就强了边水
+在显示屏的宇航员会也会有显示我们
+把小说说话前面然后他就会跟随我们
+在前方有前方十厘米有毒物质后小他
+就会跟随在屋前进然后我们再是长安
+就换键可以退出这个可以退出这个超
+声波模式就是说我们可以将想那个遥
+控连接这边可以还可以显示波形显示
+调试了一些参数这边还有个斜坡形成
+这个时候就是小车在薄到时候我们开
+始写作前景开始过咸甜之后小时候就
+可以在坡道上面停止然后在显示屏的
+一些参数可以大概的再讲一下显示屏
+的最后一行视角度的3d是韩式编码器
+的数据然后倒数第二行是电池电量电
+池的电压当电池电压的一10一点50说
+我们建议对电视充电
+
+
+Below we explain how to set up the car from the meeting
+Go to the trolley parade to practice photoelectricity, especially a
+A white charging port is used in the test server
+But we get along is also such a level topping
+It's a pornographic film and can't make contact with the lineup here
+Or maybe cause the network then here is a
+The trapezoid teaching fruit is then mainly used to identify the car
+Palace's slowly on top of the ass on this board
+It's got to grow slowly and over time we'll
+I see that there is a group switch here that is set to this time, the main
+The lights on the board will come on but this number is not guaranteed
+We can turn on the screen ratio in two ways
+If we can click a button, we can
+With a single English file again it can be closed in the user
+See next to this is the reset button and then we can
+In order to press and hold the trolley before pushing, be sure to use the test fader's
+Then just a little bit faster this time to get him down
+to auto-save when we're in the dolly to keep the peace
+In this case, it records that the trolley is quickly lifted up and the bomb is
+The car senses a large acceleration and then
+After that, it will automatically turn off the electronic
+Each module is the controller, which is the web page module.
+is the bluetooth module then this is the driver and then again
+A TV power measurement module here is a solder
+The interface here is the wireless module interface. This side can be used for
+Here are some extensions for an unforgettable result
+Expanded solution and then above we test drive through
+Remember not to operate with electricity when we put it on
+When I was working out, I checked the barrage of a video here.
+Above when we start
+The second line of the display shows some distance
+leave but he can't get into the wall we need to go first
+After the balance is turned on and the safety is turned on, we often use the button
+For two seconds we show him at the top right when it hangs
+The dry pinyin pair displayed on the arm will represent the World Cup
+When there is an obstacle in front of the upper mode, the front is 200
+If there are three hands within 0.5 meters in front of the meter,
+Back if you want to switch to this water mode, it is forward
+When there is an obstacle, the car will follow the mainland
+Then we can also we need to use adb connection to add
+After adding, we find a bluetooth here and connect it
+Then there is an ultrasonic attack on the debugging interface here.
+Switch we click this time to strengthen the edge water
+The astronauts on the display will also show us
+Put the novel up front and he'll follow us
+Small him after there is a toxic substance ten centimeters ahead
+will follow the house and then we will be Chang'an again
+Just change the key to exit this can exit this super
+Sonic mode means that we can
+The control connection can also display the waveform display.
+After debugging some parameters, there is still a slope here.
+This time is when the car is thin and we drive
+The prospect of starting writing began to be salty and sweet after I was a child
+You can stop on the ramp and then
+Some parameters can be roughly talked about the display
+The last line of perspective 3d is the korean encoder
+data and then the penultimate row is the battery level
+The voltage of the battery when a 10.50 of the battery voltage says
+We recommend charging the TV 

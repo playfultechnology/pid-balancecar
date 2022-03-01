@@ -1,0 +1,147 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\1.Work\MiniBalanceV5.0\MiniBalanceV5.0【高配版】平衡小车（STM32F405RGT6）\高配版平衡小车附送资料（STM32F405RGT6）\MiniBalanceV5.0【高配版】平衡小车PID学习源码\USER\Minibalance.uvproj
+Project File Date:  06/02/2017
+
+<h2>Output:</h2>
+Build target 'MinibalanceF4'
+compiling encoder.c...
+linking...
+Program Size: Code=38878 RO-data=6554 RW-data=332 ZI-data=2860  
+FromELF: creating hex file...
+"..\OBJ\Minibalance.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OBJ\\Minibalance.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+</pre>
+</body>
+</html>
+0.c...
+compiling inv_mpu.c...
+compiling inv_mpu_dmp_motion_driver.c...
+linking...
+Program Size: Code=38822 RO-data=6554 RW-data=332 ZI-data=2860  
+FromELF: creating hex file...
+"..\OBJ\Minibalance.axf" - 0 Error(s), 0 Warning(s).
+Load "..\\OBJ\\Minibalance.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+identifier "Flag_Hover" is undefined
+          if(uart_receive==0x62)Flag_Hover=!Flag_Hover;  
+..\MiniBalance_HARDWARE\USARTX\usartx.c(74): error:  #20: identifier "Bi_zhang" is undefined
+                 if(Bi_zhang!=0)
+..\MiniBalance_HARDWARE\USARTX\usartx.c(81): error:  #20: identifier "Remoter_Ch1" is undefined
+                        Remoter_Ch1=0,Remoter_Ch2=0; //APP接收到信号之后 屏蔽航模遥控
+..\MiniBalance_HARDWARE\USARTX\usartx.c(81): error:  #20: identifier "Remoter_Ch2" is undefined
+                        Remoter_Ch1=0,Remoter_Ch2=0; //APP接收到信号之后 屏蔽航模遥控
+..\MiniBalance_HARDWARE\USARTX\usartx.c(82): error:  #20: identifier "Flag_Qian" is undefined
+                        if(uart_receive==0x5A)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(82): error:  #20: identifier "Flag_Hou" is undefined
+                        if(uart_receive==0x5A)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(82): error:  #20: identifier "Flag_Left" is undefined
+                        if(uart_receive==0x5A)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(82): error:  #20: identifier "Flag_Right" is undefined
+                        if(uart_receive==0x5A)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(93): error:  #20: identifier "Remoter_Ch1" is undefined
+        Remoter_Ch1=0,Remoter_Ch2=0; //APP接收到信号之后 屏蔽航模遥控                   
+..\MiniBalance_HARDWARE\USARTX\usartx.c(93): error:  #20: identifier "Remoter_Ch2" is undefined
+        Remoter_Ch1=0,Remoter_Ch2=0; //APP接收到信号之后 屏蔽航模遥控                   
+..\MiniBalance_HARDWARE\USARTX\usartx.c(94): error:  #20: identifier "Flag_Qian" is undefined
+                        if(uart_receive==0x00)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(94): error:  #20: identifier "Flag_Hou" is undefined
+                        if(uart_receive==0x00)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(94): error:  #20: identifier "Flag_Left" is undefined
+                        if(uart_receive==0x00)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(94): error:  #20: identifier "Flag_Right" is undefined
+                        if(uart_receive==0x00)  Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\USARTX\usartx.c(113): error:  #20: identifier "Show_Data_Mb" is undefined
+                             Show_Data_Mb=i;
+..\MiniBalance_HARDWARE\USARTX\usartx.c(124): error:  #20: identifier "Balance_Kp" is undefined
+                                                         case 0x30:  Balance_Kp=Data/100;break;
+..\MiniBalance_HARDWARE\USARTX\usartx.c(125): error:  #20: identifier "Balance_Kd" is undefined
+                                                         case 0x31:  Balance_Kd=Data/100;break;
+..\MiniBalance_HARDWARE\USARTX\usartx.c(126): error:  #20: identifier "Velocity_Kp" is undefined
+                                                         case 0x32:  Velocity_Kp=Data/100;break;
+..\MiniBalance_HARDWARE\USARTX\usartx.c(127): error:  #20: identifier "Velocity_Ki" is undefined
+                                                         case 0x33:  Velocity_Ki=Data/100;break;
+..\MiniBalance_HARDWARE\USARTX\usartx.c: 0 warnings, 20 errors
+compiling stmflash.c...
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(96): error:  #20: identifier "PID_Parameter" is undefined
+        STMFLASH_Read(FLASH_SAVE_ADDR,(u32*)PID_Parameter,10);
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(99): error:  #20: identifier "Balance_Kp" is undefined
+        Balance_Kp=300;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(100): error:  #20: identifier "Balance_Kd" is undefined
+        Balance_Kd=1;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(101): error:  #20: identifier "Velocity_Kp" is undefined
+        Velocity_Kp=80;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(102): error:  #20: identifier "Velocity_Ki" is undefined
+        Velocity_Ki=0.4;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(106): error:  #20: identifier "Balance_Kp" is undefined
+        Balance_Kp=(float)PID_Parameter[0]/100;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(107): error:  #20: identifier "Balance_Kd" is undefined
+        Balance_Kd=(float)PID_Parameter[1]/100;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(108): error:  #20: identifier "Velocity_Kp" is undefined
+        Velocity_Kp=(float)PID_Parameter[2]/100;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(109): error:  #20: identifier "Velocity_Ki" is undefined
+        Velocity_Ki=(float)PID_Parameter[3]/100;
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(115): error:  #20: identifier "Flash_Parameter" is undefined
+  Flash_Parameter[0]=Balance_Kp*100;            
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(115): error:  #20: identifier "Balance_Kp" is undefined
+  Flash_Parameter[0]=Balance_Kp*100;            
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(116): error:  #20: identifier "Balance_Kd" is undefined
+  Flash_Parameter[1]=Balance_Kd*100;    
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(117): error:  #20: identifier "Velocity_Kp" is undefined
+  Flash_Parameter[2]=Velocity_Kp*100;   
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c(118): error:  #20: identifier "Velocity_Ki" is undefined
+  Flash_Parameter[3]=Velocity_Ki*100;   
+..\MiniBalance_HARDWARE\STMFLASH\stmflash.c: 0 warnings, 14 errors
+compiling spi.c...
+compiling 24l01.c...
+compiling timer.c...
+..\MiniBalance_HARDWARE\TIMER\timer.c(79): error:  #20: identifier "Distance" is undefined
+                        Distance=TIM3CH3_CAPTURE_STA&0X3F;
+..\MiniBalance_HARDWARE\TIMER\timer.c(229): error:  #20: identifier "Remoter_Ch1" is undefined
+                                                                        Remoter_Ch1 = TIM8CH1_CAPTURE_DOWNVAL - TIM8CH1_CAPTURE_UPVAL
+..\MiniBalance_HARDWARE\TIMER\timer.c(257): error:  #20: identifier "Remoter_Ch2" is undefined
+                                Remoter_Ch2 = TIM8CH2_CAPTURE_DOWNVAL - TIM8CH2_CAPTURE_UPVAL
+..\MiniBalance_HARDWARE\TIMER\timer.c: 0 warnings, 3 errors
+compiling can.c...
+..\MiniBalance_HARDWARE\CAN\can.c(209): error:  #20: identifier "Remoter_Ch1" is undefined
+        Remoter_Ch1=0,Remoter_Ch2=0; //接收到信号之后 屏蔽航模遥控
+..\MiniBalance_HARDWARE\CAN\can.c(209): error:  #20: identifier "Remoter_Ch2" is undefined
+        Remoter_Ch1=0,Remoter_Ch2=0; //接收到信号之后 屏蔽航模遥控
+..\MiniBalance_HARDWARE\CAN\can.c(210): error:  #20: identifier "Flag_Qian" is undefined
+        if(Can_Receive==0x5A)   Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\CAN\can.c(210): error:  #20: identifier "Flag_Hou" is undefined
+        if(Can_Receive==0x5A)   Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\CAN\can.c(210): error:  #20: identifier "Flag_Left" is undefined
+        if(Can_Receive==0x5A)   Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\CAN\can.c(210): error:  #20: identifier "Flag_Right" is undefined
+        if(Can_Receive==0x5A)   Flag_Qian=0,Flag_Hou=0,Flag_Left=0,Flag_Right=0;//////////////刹车
+..\MiniBalance_HARDWARE\CAN\can.c(220): error:  #20: identifier "Flag_sudu" is undefined
+        if(Can_Receive==0x59)  Flag_sudu=2;  //低速挡（默认值）
+..\MiniBalance_HARDWARE\CAN\can.c: 0 warnings, 7 errors
+compiling control.c...
+..\MiniBalance\CONTROL\control.c(36): warning:  #223-D: function "Read_Position" declared implicitly
+                                                Encoder=Read_Position(2);                      //===更新位置信息
+..\MiniBalance\CONTROL\control.c(42): warning:  #223-D: function "Read_Velocity" declared implicitly
+                                                Encoder=Read_Velocity(2);                      //===更新速度信息
+..\MiniBalance\CONTROL\control.c(46): warning:  #223-D: function "Read_Velocity" declared implicitly
+                                                Encoder_Key=-Read_Velocity(4);   //读取右路编码器的数据控制PID参数调节
+..\MiniBalance\CONTROL\control.c: 3 warnings, 0 errors
+compiling show.c...
+compiling MPU6050.c...
+..\MiniBalance\MPU6050\MPU6050.c(266): error:  #20: identifier "Flag_Show" is undefined
+         Flag_Show=1;
+..\MiniBalance\MPU6050\MPU6050.c: 0 warnings, 1 error
+compiling inv_mpu.c...
+compiling inv_mpu_dmp_motion_driver.c...
+"..\OBJ\Minibalance.axf" - 46 Error(s), 3 Warning(s).
+Target not created

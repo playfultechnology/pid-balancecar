@@ -1,0 +1,17 @@
+"D:\works\program\IAR8.3\arm\bin\armproc.dll" 
+
+"D:\works\program\IAR8.3\arm\bin\armjlink2.dll" 
+
+"F:\K60\K60单片机出厂代码\Project\Debug\Exe\2WD_Car.out" 
+
+--plugin="D:\works\program\IAR8.3\arm\bin\armbat.dll" 
+
+--device_macro="D:\works\program\IAR8.3\arm\config\debugger\NXP\Kxx.dmac" 
+
+--device_macro="D:\works\program\IAR8.3\arm\config\debugger\NXP\Kxx_Trace.dmac" 
+
+--flash_loader="D:\works\program\IAR8.3\arm\config\flashloader\NXP\FlashK60Dxxx128K.board" 
+
+
+
+

@@ -1,0 +1,7 @@
+关于线性CCD和MK60DN512的接线如下
+MK60     线性CCD
+GND------GND
+3.3V-----VDD
+PTE0------AO
+PTE1------CLK
+PTE2------SI

@@ -1,0 +1,7 @@
+关于线性CCD和STM32F103C8T6的接线如下
+STM32     线性CCD
+GND------GND
+3.3V-----VDD
+PB0------AO
+PA2------CLK
+PA3------SI
