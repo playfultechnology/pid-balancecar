@@ -26,9 +26,14 @@ The code/ directory contains several versions of the project:
   - "bizhang" (蔽障) = "obstacle" (i.e. moves to avoid obstacles placed in front of ultrasonic sensor)
  - Short press on USER button: start/stop balancing
 
-# Connecting via BlueTooth
+### Connecting via BlueTooth
  - Pair with the BT04-A module (passcode 1234) to be able to send/receive data via BT Classic serial interface
 
+### Connecting via RC
+ - Connect an RC receiver (e.g. FS-iA6B) to the connector near the power with the BT04-A module (passcode 1234) to be able to send/receive data via BT Classic serial interface.
+ - The connector is a 4x3 block, with 4xGND, 4x5V, and GPIO pins PC6-PC9.
+<img src="images/Balance Car_bb.png"/>
+ 
  
 ## Hardware
 - 2x [MG513P3012V](https://www.aliexpress.com/item/4000996252848.html) Motors, 30:1 gear ratio
