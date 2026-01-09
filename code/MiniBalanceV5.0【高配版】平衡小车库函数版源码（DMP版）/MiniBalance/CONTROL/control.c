@@ -15,18 +15,15 @@ int Voltage_Temp,Voltage_Count,Voltage_All;
          5ms定时中断由MPU6050的INT引脚触发
          严格保证采样和数据处理的时间同步				 
 **************************************************************************/
-int EXTI15_10_IRQHandler(void) 
-{    
-	 if(INT==0)		
-	{   
-		   EXTI->PR=1<<15;                                                      //清除中断标志位   
-		   Flag_Target=!Flag_Target;
-		  if(delay_flag==1)
-			 {
-				 if(++delay_50==10)	 delay_50=0,delay_flag=0;                     //给主函数提供50ms的精准延时
-			 }
-		  if(Flag_Target==1)                                                  //5ms读取一次陀螺仪和加速度计的值，更高的采样频率可以改善卡尔曼滤波和互补滤波的效果
-			{
+int EXTI15_10_IRQHandler(void) {    
+	if(INT==0) {   
+		EXTI->PR=1<<15;                                                      //清除中断标志位   
+		Flag_Target=!Flag_Target;
+		if(delay_flag==1){
+			if(++delay_50==10)	 delay_50=0,delay_flag=0;                     //给主函数提供50ms的精准延时
+		}
+		if(Flag_Target==1)                                                  //5ms读取一次陀螺仪和加速度计的值，更高的采样频率可以改善卡尔曼滤波和互补滤波的效果
+		{
 			Get_Angle(Way_Angle);                                               //===更新姿态	
 			Get_MC6();                                                        	//===读取航模遥控器的数据					
 			if(++Flash_R_Count<=250&&Angle_Balance>30)Flash_Read();             //=====读取Flash的PID参数		
@@ -67,11 +64,11 @@ int EXTI15_10_IRQHandler(void)
 **************************************************************************/
 int balance(float Angle,float Gyro)
 {  
-   float Bias;
-	 int balance;
-	 Bias=Angle-Zhongzhi;                       //===求出平衡的角度中值 和机械相关
-	 balance=Balance_Kp*Bias+Gyro*Balance_Kd;   //===计算平衡控制的电机PWM  PD控制   kp是P系数 kd是D系数 
-	 return balance;
+	float Bias;
+	int balance;
+	Bias=Angle-Zhongzhi;                       //===求出平衡的角度中值 和机械相关
+	balance=Balance_Kp*Bias+Gyro*Balance_Kd;   //===计算平衡控制的电机PWM  PD控制   kp是P系数 kd是D系数 
+	return balance;
 }
 
 /**************************************************************************
@@ -80,38 +77,40 @@ int balance(float Angle,float Gyro)
 返回  值：速度控制PWM
 作    者：平衡小车之家
 **************************************************************************/
-int velocity(int encoder_left,int encoder_right)
-{  
-     static float Velocity,Encoder_Least,Encoder,Movement;
-	  static float Encoder_Integral,Target_Velocity;
-	  //=============遥控前进后退部分=======================// 
-	  if(Bi_zhang!=0&&Flag_sudu==1)  Target_Velocity=55;                 //如果进入避障模式,自动进入低速模式
-    else 	                         Target_Velocity=110;                 
-		if(1==Flag_Qian)    	Movement=-Target_Velocity/Flag_sudu;	         //===前进标志位置1 
-		else if(1==Flag_Hou)	Movement=Target_Velocity/Flag_sudu;         //===后退标志位置1
-	  else  Movement=0;	
-	   if(Bi_zhang==1&&Flag_Left!=1&&Flag_Right!=1)        //进入避障模式
-		{
-		   if(Distance<500)  Movement=Target_Velocity/Flag_sudu;
-		}	
-		if(Bi_zhang==2&&Flag_Left!=1&&Flag_Right!=1)        //进入跟随模式
-		{
-		   if(Distance>100&&Distance<300)  Movement=-Target_Velocity/Flag_sudu;
-		}
-   //=============速度PI控制器=======================//	
-		Encoder_Least =(encoder_left+encoder_right)-0;                      //===获取最新速度偏差==测量速度（左右编码器之和）-目标速度（此处为零） 
-		Encoder *= 0.8f;		                                                //===一阶低通滤波器       
-		Encoder += Encoder_Least*0.2f;	                                    //===一阶低通滤波器    
-		Encoder_Integral +=Encoder;                                       	//===积分出位移 积分时间：10ms
-		Encoder_Integral=Encoder_Integral-Movement;                      	 	//===接收遥控器数据，控制前进后退
-		if(Encoder_Integral>10000)  	Encoder_Integral=10000;             	//===积分限幅
-		if(Encoder_Integral<-10000)	Encoder_Integral=-10000;             		//===积分限幅	
-		Velocity=Encoder*Velocity_Kp+Encoder_Integral*Velocity_Ki;        	//===速度控制	
+int velocity(int encoder_left,int encoder_right) {  
+	static float Velocity,Encoder_Least,Encoder,Movement;
+	static float Encoder_Integral,Target_Velocity;
+	//=============遥控前进后退部分=======================//
+	// If obstacle avoidance mode is entered, automatically enter low speed mode
+	if(Bi_zhang!=0&&Flag_sudu==1)  Target_Velocity=55;                 //如果进入避障模式,自动进入低速模式
+    else 	                       Target_Velocity=110;                 
+	// Forward marker position 1
+	if(1==Flag_Qian)    	Movement=-Target_Velocity/Flag_sudu;	//===前进标志位置1 
+	// Reverse marker position 1
+	else if(1==Flag_Hou)	Movement=Target_Velocity/Flag_sudu;         //===后退标志位置1
+	else  Movement=0;
+	// Enter obstacle avoidance mode
+	if(Bi_zhang==1&&Flag_Left!=1&&Flag_Right!=1){        //进入避障模式
+		if(Distance<500)  Movement=Target_Velocity/Flag_sudu;
+	}
+	// Enter follow mode
+	if(Bi_zhang==2&&Flag_Left!=1&&Flag_Right!=1) {        //进入跟随模式
+		if(Distance>100&&Distance<300)  Movement=-Target_Velocity/Flag_sudu;
+	}
+	//=============速度PI控制器=======================//	
+	Encoder_Least =(encoder_left+encoder_right)-0;                      //===获取最新速度偏差==测量速度（左右编码器之和）-目标速度（此处为零） 
+	Encoder *= 0.8f;		                                                //===一阶低通滤波器       
+	Encoder += Encoder_Least*0.2f;	                                    //===一阶低通滤波器    
+	Encoder_Integral +=Encoder;                                       	//===积分出位移 积分时间：10ms
+	Encoder_Integral=Encoder_Integral-Movement;                      	 	//===接收遥控器数据，控制前进后退
+	if(Encoder_Integral>10000)  	Encoder_Integral=10000;             	//===积分限幅
+	if(Encoder_Integral<-10000)	Encoder_Integral=-10000;             		//===积分限幅	
+	Velocity=Encoder*Velocity_Kp+Encoder_Integral*Velocity_Ki;        	//===速度控制	
 
-		if(Flag_Hover==1)Zhongzhi=-Encoder/10-Encoder_Integral/300;       //这些斜坡悬停使用的算法
+	if(Flag_Hover==1)Zhongzhi=-Encoder/10-Encoder_Integral/300;       //这些斜坡悬停使用的算法
 		
-		if(Turn_Off(Angle_Balance,Voltage)==1||Flag_Stop==1)   Encoder_Integral=0;      //===电机关闭后清除积分
-	  return Velocity;
+	if(Turn_Off(Angle_Balance,Voltage)==1||Flag_Stop==1)   Encoder_Integral=0;      //===电机关闭后清除积分
+	return Velocity;
 }
 
 /**************************************************************************
@@ -335,23 +334,25 @@ int Put_Down(float Angle,int encoder_left,int encoder_right)
 
 
 /**************************************************************************
-函数功能：采集遥控器的信号
-入口参数：无
-返回  值：无
+Receive RC Remote Control Signals
 **************************************************************************/
-void  Get_MC6(void)
-{ 
-	if(Flag_Left==0&&Flag_Right==0)
-	{	
-    	 if((Remoter_Ch1>1650&&Remoter_Ch1<2100)||(Remoter_Ch1>21650&&Remoter_Ch1<22100))	Flag_Qian=1,Flag_Hou=0,Flag_sudu=1;//////////////前
-	else if((Remoter_Ch1<1350&&Remoter_Ch1>900) ||(Remoter_Ch1<21350&&Remoter_Ch1>20900))	Flag_Qian=0,Flag_Hou=1,Flag_sudu=1;//////////////后
-  else if ((Remoter_Ch1>1350&&Remoter_Ch1<1650) ||(Remoter_Ch1>21350&&Remoter_Ch1<21650))	Flag_Qian=0,Flag_Hou=0;//////////////停
+void  Get_MC6(void) {
+	// If the car is not currently turning
+	if(Flag_Left==0 && Flag_Right==0) {
+		// Forward
+    	if((Remoter_Ch1>1650&&Remoter_Ch1<2100)||(Remoter_Ch1>21650&&Remoter_Ch1<22100))	Flag_Qian=1,Flag_Hou=0,Flag_sudu=1;
+		// Backward
+		else if((Remoter_Ch1<1350&&Remoter_Ch1>900) ||(Remoter_Ch1<21350&&Remoter_Ch1>20900))	Flag_Qian=0,Flag_Hou=1,Flag_sudu=1;// Stop
+		else if ((Remoter_Ch1>1350&&Remoter_Ch1<1650) ||(Remoter_Ch1>21350&&Remoter_Ch1<21650))	Flag_Qian=0,Flag_Hou=0;
 	}
-	if(Flag_Qian==0&&Flag_Hou==0)
-	{	
-	    	 if((Remoter_Ch2>1650&&Remoter_Ch2<2100)||(Remoter_Ch2>21650&&Remoter_Ch2<22100))Flag_Left=1,Flag_Right=0,Flag_sudu=1;//////////////左
-  	else if((Remoter_Ch2<1350&&Remoter_Ch2>900) ||(Remoter_Ch2<21350&&Remoter_Ch2>20900))Flag_Left=0,Flag_Right=1,Flag_sudu=1;//////////////右
-	  else if ((Remoter_Ch2>1350&&Remoter_Ch2<1650) ||(Remoter_Ch2>21350&&Remoter_Ch2<21650))Flag_Left=0,Flag_Right=0;//////////////停
+	// If the car is not currently moving forward/back
+	if(Flag_Qian==0 && Flag_Hou==0) {
+		// Left
+		if((Remoter_Ch2>1650&&Remoter_Ch2<2100)||(Remoter_Ch2>21650&&Remoter_Ch2<22100))Flag_Left=1,Flag_Right=0,Flag_sudu=1;
+		// Right
+		else if((Remoter_Ch2<1350&&Remoter_Ch2>900) ||(Remoter_Ch2<21350&&Remoter_Ch2>20900))Flag_Left=0,Flag_Right=1,Flag_sudu=1;
+		// Stop
+		else if ((Remoter_Ch2>1350&&Remoter_Ch2<1650) ||(Remoter_Ch2>21350&&Remoter_Ch2<21650))Flag_Left=0,Flag_Right=0;
 	}
 }	
 
